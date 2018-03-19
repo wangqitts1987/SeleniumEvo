@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My suite1" parallel="classes" thread-count="5">	
+  <listeners>
+    <!--  <listener class-name="UITest.RetryListener" />-->
+    <listener class-name="TestNGListener.RetryListener" />
+    <listener class-name="ExtentReport.ExtentReportListener"/>
+  </listeners>
+  <test name="Test1" >
+  	<parameter name="mytest"  value="wq"/>  
+    <classes>
+      <class name="UITest.TestCase1"/>
+    </classes>
+  </test> 
+  <test name = "Test3">
+      <classes>
+      <class name="UITest.TestCase2"/>
+    </classes>
+  </test>
+  <!-- Test
+  <test name="test2">
+  	<parameter name="mytest"  value="wq2"/>
+    <classes>
+      <class name="com.chinasunhealth.autotest.uitest.NewTest"/>
+    </classes>
+  </test> 
+  <test name="test3">
+  	<parameter name="mytest"  value="wq3"/>
+    <classes>
+      <class name="com.chinasunhealth.autotest.uitest.NewTest"/>
+    </classes>
+  </test> -->
+</suite> 

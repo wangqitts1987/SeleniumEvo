@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My suite2" parallel="classes" thread-count="5">
+  <test name="Test2" >
+  	<parameter name="mytest"  value="wq"/>  
+    <classes>
+      <!--  class name="TestCase.ShopCase.ProductCase"/>-->
+      <class name="UITest.TestCase3"/>
+    </classes>
+  </test> <!-- Test
+  <test name="test2">
+  	<parameter name="mytest"  value="wq2"/>
+    <classes>
+      <class name="com.chinasunhealth.autotest.uitest.NewTest"/>
+    </classes>
+  </test> 
+  <test name="test3">
+  	<parameter name="mytest"  value="wq3"/>
+    <classes>
+      <class name="com.chinasunhealth.autotest.uitest.NewTest"/>
+    </classes>
+  </test> -->
+</suite> 
